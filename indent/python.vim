@@ -191,6 +191,6 @@ function! GetPythonIndent(lnum)
         return -1
     endif
 
-    " In all other cases, line up with the start of the previous statement.
-    return indent(sslnum)
+    " in other cases do not do nothing
+    return -1
 endfunction
